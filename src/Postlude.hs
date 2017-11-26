@@ -88,6 +88,10 @@ import Data.Ord as X
   ( Ord(..)
   )
 
+import Data.String as X
+  ( String
+  )
+
 import Data.Traversable as X
   ( Traversable
   , for
