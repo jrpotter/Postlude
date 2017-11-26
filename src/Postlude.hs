@@ -28,7 +28,11 @@ import Control.Monad as X
   , (>>)
   , (>>=)
   , fail
+  , filterM
   , fmap
+  , guard
+  , mplus
+  , mzero
   , return
   )
 
