@@ -68,9 +68,17 @@ import Data.Int as X
   , Int64
   )
 
-import Data.Foldable as X
-  ( foldl1
+import Data.List as X
+  ( (++)
+  , all
+  , any
+  , filter
+  , foldl
+  , foldl1
+  , foldr
   , foldr1
+  , map
+  , zip
   )
 
 import Data.Maybe as X
