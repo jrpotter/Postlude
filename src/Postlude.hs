@@ -54,19 +54,19 @@ import Control.Monad.Trans.Reader as X
   )
 
 import Data.Bool as X
-  ( Bool(..)
+  ( Bool (..)
   )
 
 import Data.Char as X
-  ( Char
+  ( Char (..)
   )
 
 import Data.Either as X
-  ( Either(Left, Right)
+  ( Either (..)
   )
 
 import Data.Eq as X
-  ( Eq(..)
+  ( Eq (..)
   )
 
 import Data.Function as X
@@ -97,7 +97,7 @@ import Data.List as X
   )
 
 import Data.Maybe as X
-  ( Maybe(Just, Nothing)
+  ( Maybe (..)
   )
 
 import Data.Monoid as X
@@ -108,7 +108,7 @@ import Data.Monoid as X
   )
 
 import Data.Ord as X
-  ( Ord(..)
+  ( Ord (..)
   )
 
 import Data.String as X
@@ -116,13 +116,11 @@ import Data.String as X
   )
 
 import Data.Traversable as X
-  ( Traversable
-  , for
-  , forM
-  , mapM
-  , sequence
-  , sequenceA
-  , traverse
+  ( Traversable (..)
+  )
+
+import Prelude as X
+  ( Num (..)
   )
 
 import System.Environment as X
@@ -133,7 +131,7 @@ import System.IO as X
   ( FilePath
   , Handle
   , IO
-  , IOMode(..)
+  , IOMode (..)
   , openFile
   , print
   , stderr
