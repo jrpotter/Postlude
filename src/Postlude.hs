@@ -36,10 +36,21 @@ import Control.Monad as X
   , return
   )
 
+import Control.Monad.Reader as X
+  ( MonadReader
+  , ask
+  , local
+  , reader
+  )
+
 import Control.Monad.Trans as X
   ( MonadIO
   , lift
   , liftIO
+  )
+
+import Control.Monad.Trans.Reader as X
+  ( ReaderT (..)
   )
 
 import Data.Bool as X
