@@ -75,8 +75,13 @@ import Data.Eq as X
 
 import Data.Function as X
   ( ($)
+  , (&)
   , (.)
+  , const
+  , fix
+  , flip
   , id
+  , on
   )
 
 import Data.Int as X
