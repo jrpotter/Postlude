@@ -57,7 +57,6 @@ import Data.Bool as X
   ( Bool (..)
   , (&&)
   , (||)
-  , and
   , not
   , otherwise
   )
