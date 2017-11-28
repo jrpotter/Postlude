@@ -55,6 +55,11 @@ import Control.Monad.Trans.Reader as X
 
 import Data.Bool as X
   ( Bool (..)
+  , (&&)
+  , (||)
+  , and
+  , not
+  , otherwise
   )
 
 import Data.Char as X
