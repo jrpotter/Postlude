@@ -3,35 +3,43 @@
 module Postlude (module X) where
 
 import Control.Applicative as X
-  ( (*>)
+  ( Applicative
+  , (*>)
   , (<$>)
   , (<*)
   , (<*>)
-  , Applicative
   , pure
   )
 
 import Control.Arrow as X
-  ( (&&&)
+  ( Arrow
+  , ArrowChoice
+  , ArrowLoop
+  , ArrowMonad
+  , ArrowPlus
+  , ArrowZero
+  , (&&&)
   , (***)
   , (+++)
+  , (<+>)
   , (<<<)
   , (>>>)
   , (|||)
-  , Arrow
-  , ArrowChoice
   , arr
   , first
   , left
+  , loop
   , returnA
   , right
   , second
+  , zeroArrow
   )
 
 import Control.Monad as X
   ( Functor
   , Monad
   , MonadPlus
+  , (<$)
   , (>>)
   , (>>=)
   , fail
