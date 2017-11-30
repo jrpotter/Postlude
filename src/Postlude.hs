@@ -149,8 +149,32 @@ import Data.Traversable as X
   ( Traversable (..)
   )
 
-import Prelude as X
+import GHC.Enum as X
+  ( Bounded (..)
+  , Enum (..)
+  )
+
+import GHC.Float as X
+  ( Double (..)
+  , Float (..)
+  , Floating (..)
+  , RealFloat (..)
+  )
+
+import GHC.Num as X
   ( Num (..)
+  , Integer
+  )
+
+import GHC.Real as X
+  ( Fractional (..)
+  , Integral (..)
+  , Ratio (..)
+  , Rational
+  )
+
+import GHC.Show as X
+  ( Show (..)
   )
 
 import System.Environment as X
