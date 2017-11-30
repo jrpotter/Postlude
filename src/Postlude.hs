@@ -19,9 +19,12 @@ import Control.Arrow as X
   , (>>>)
   , (|||)
   , Arrow
+  , ArrowChoice
   , arr
   , first
+  , left
   , returnA
+  , right
   , second
   )
 
