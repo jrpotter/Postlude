@@ -36,15 +36,12 @@ import Control.Arrow as X
   )
 
 import Control.Monad as X
-  ( Functor
-  , Monad
+  ( Monad
   , MonadPlus
-  , (<$)
   , (>>)
   , (>>=)
   , fail
   , filterM
-  , fmap
   , guard
   , mplus
   , mzero
@@ -97,6 +94,15 @@ import Data.Function as X
   , flip
   , id
   , on
+  )
+
+import Data.Functor as X
+  ( Functor
+  , ($>)
+  , (<$)
+  , (<$>)
+  , fmap
+  , void
   )
 
 import Data.Int as X
