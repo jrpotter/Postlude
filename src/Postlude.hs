@@ -122,6 +122,7 @@ import Data.List as X
   , foldl1
   , foldr
   , foldr1
+  , length
   , map
   , zip
   )
