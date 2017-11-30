@@ -14,6 +14,10 @@ import Control.Applicative as X
 import Control.Arrow as X
   ( (&&&)
   , (***)
+  , (+++)
+  , (<<<)
+  , (>>>)
+  , (|||)
   , Arrow
   , arr
   , first
