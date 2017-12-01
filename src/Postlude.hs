@@ -155,6 +155,10 @@ import GHC.Enum as X
   , Enum (..)
   )
 
+import GHC.Err as X
+  ( error
+  )
+
 import GHC.Float as X
   ( Double (..)
   , Float (..)
