@@ -140,6 +140,7 @@ import Data.Monoid as X
 
 import Data.Ord as X
   ( Ord (..)
+  , Ordering (..)
   )
 
 import Data.String as X
