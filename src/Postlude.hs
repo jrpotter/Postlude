@@ -55,33 +55,33 @@ import Control.Monad.Trans as X
   )
 
 import Control.Monad.Trans.Either as X
-  ( EitherT, runEitherT
+  ( EitherT, EitherT(EitherT), runEitherT
   )
 
 import Control.Monad.Trans.Except as X
   -- Note runExceptT is not actually a type declaration within the ExceptT
   -- newtype but writing as follows for consistency's sake.
-  ( ExceptT, runExceptT
+  ( ExceptT, ExceptT(ExceptT), runExceptT
   )
 
 import Control.Monad.Trans.Maybe as X
-  ( MaybeT, runMaybeT
+  ( MaybeT, MaybeT(MaybeT), runMaybeT
   )
 
 import Control.Monad.Trans.Reader as X
-  ( ReaderT, runReaderT
+  ( ReaderT, ReaderT(ReaderT), runReaderT
   )
 
 -- Note there also exists a strict interpretation but we default to the lazy
 -- implementation.
 import Control.Monad.Trans.State as X
-  ( StateT, runStateT
+  ( StateT, StateT(StateT), runStateT
   )
 
 -- Note there also exists a strict interpretation but we default to the lazy
 -- implementation.
 import Control.Monad.Trans.Writer as X
-  ( WriterT, runWriterT
+  ( WriterT, WriterT(WriterT), runWriterT
   )
 
 import Data.Bool as X
@@ -123,7 +123,7 @@ import Data.Functor as X
   )
 
 import Data.Functor.Identity as X
-  ( Identity, runIdentity
+  ( Identity, Identity(Identity), runIdentity
   )
 
 import Data.Int as X
