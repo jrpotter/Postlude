@@ -38,6 +38,7 @@ import Control.Monad.Trans as X
 
 import Control.Monad.Trans.Except as X
   ( ExceptT (..)
+  , runExceptT
   )
 
 import Control.Monad.Trans.Maybe as X
