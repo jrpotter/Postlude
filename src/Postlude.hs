@@ -3,62 +3,45 @@
 module Postlude (module X) where
 
 import Control.Applicative as X
-  ( Applicative
-  , (*>)
+  ( Applicative (..)
   , (<$>)
-  , (<*)
-  , (<*>)
   , pure
   )
 
 import Control.Arrow as X
-  ( Arrow
-  , ArrowChoice
-  , ArrowLoop
-  , ArrowMonad
-  , ArrowPlus
-  , ArrowZero
-  , (&&&)
-  , (***)
-  , (+++)
-  , (<+>)
+  ( Arrow (..)
+  , ArrowChoice (..)
+  , ArrowLoop (..)
+  , ArrowMonad (..)
+  , ArrowPlus (..)
+  , ArrowZero (..)
   , (<<<)
   , (>>>)
-  , (|||)
-  , arr
-  , first
-  , left
-  , loop
   , returnA
-  , right
-  , second
-  , zeroArrow
   )
 
 import Control.Monad as X
-  ( Monad
-  , MonadPlus
-  , (>>)
-  , (>>=)
-  , fail
+  ( Monad (..)
+  , MonadPlus (..)
   , filterM
   , guard
-  , mplus
-  , mzero
-  , return
   )
 
 import Control.Monad.Reader as X
-  ( MonadReader
-  , ask
-  , local
-  , reader
+  ( MonadReader (..)
   )
 
 import Control.Monad.Trans as X
-  ( MonadIO
+  ( MonadIO (..)
   , lift
-  , liftIO
+  )
+
+import Control.Monad.Trans.Except as X
+  ( ExceptT (..)
+  )
+
+import Control.Monad.Trans.Maybe as X
+  ( MaybeT (..)
   )
 
 import Control.Monad.Trans.Reader as X
@@ -97,12 +80,14 @@ import Data.Function as X
   )
 
 import Data.Functor as X
-  ( Functor
+  ( Functor (..)
   , ($>)
-  , (<$)
   , (<$>)
-  , fmap
   , void
+  )
+
+import Data.Functor.Identity as X
+  ( Identity (..)
   )
 
 import Data.Int as X
@@ -132,10 +117,7 @@ import Data.Maybe as X
   )
 
 import Data.Monoid as X
-  ( Monoid
-  , mappend
-  , mconcat
-  , mempty
+  ( Monoid (..)
   )
 
 import Data.Ord as X
