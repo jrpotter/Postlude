@@ -40,11 +40,13 @@ import Control.Monad.Reader as X
   )
 
 import Control.Monad.State as X
-  ( State
+  ( MonadState, get, put, state
+  , State
   )
 
 import Control.Monad.Writer as X
-  ( Writer
+  ( MonadWriter, listen, pass, tell, writer
+  , Writer
   )
 
 import Control.Monad.Trans as X
