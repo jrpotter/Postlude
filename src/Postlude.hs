@@ -92,6 +92,10 @@ import Data.Bool as X
   , otherwise
   )
 
+import Data.ByteString.Lazy as X
+  ( ByteString
+  )
+
 import Data.Char as X
   ( Char
   )
@@ -163,6 +167,10 @@ import Data.Ord as X
 
 import Data.String as X
   ( String
+  )
+
+import Data.Text.Lazy as X
+  ( Text
   )
 
 import Data.Traversable as X
@@ -247,6 +255,8 @@ import GHC.Show as X
 
 import System.Environment as X
   ( getArgs
+  , getEnvironment
+  , getProgName
   )
 
 import System.IO as X
