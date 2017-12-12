@@ -39,6 +39,12 @@ import Control.Monad.Except as X
   ( ExceptT, ExceptT(ExceptT), runExceptT
   )
 
+import Control.Monad.Free as X
+  ( Free, Free(Pure), Free(Free)
+  , retract
+  , wrap
+  )
+
 import Control.Monad.Reader as X
   ( MonadReader, ask, local, reader
   , Reader, runReader
