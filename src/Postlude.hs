@@ -76,13 +76,11 @@ import Control.Monad.Writer as X
 
 import Control.Monad.Trans.Except as X
   ( Except -- ^ ExceptT e Identity :: * -> *
-  , ExceptT, ExceptT(ExceptT)
-  , runExceptT
+  , ExceptT, ExceptT(ExceptT), runExceptT
   )
 
 import Control.Monad.Trans.Free as X
   ( Free -- ^ FreeT f Identity :: * -> *
-  , FreeF, FreeF(Pure), FreeF(Free)
   , FreeT, FreeT(FreeT), runFreeT
   )
 
