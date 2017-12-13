@@ -33,6 +33,22 @@ import Control.Monad as X
   , guard
   )
 
+import Control.Monad.Catch as X
+  ( Exception
+  ,   Exception(displayException)
+  ,   Exception(fromException)
+  ,   Exception(toException)
+  , Handler, Handler(Handler)
+  , MonadCatch, catch
+  , MonadMask, mask, uninterruptibleMask
+  , MonadThrow, throwM
+  , SomeException, SomeException(SomeException)
+  , bracket
+  , finally
+  , handle
+  , try
+  )
+
 import Control.Monad.Except as X
   -- Note runExceptT is not actually a type declaration within the ExceptT
   -- newtype but writing as follows for consistency's sake.
