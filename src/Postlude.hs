@@ -50,37 +50,19 @@ import Control.Monad.Catch as X
   )
 
 import Control.Monad.Except as X
-  -- Note runExceptT is not actually a type declaration within the ExceptT
-  -- newtype but writing as follows for consistency's sake.
-  ( ExceptT, ExceptT(ExceptT), runExceptT
+  ( MonadError, catchError, throwError
   )
 
 import Control.Monad.Free as X
-  ( Free, Free(Pure), Free(Free)
-  , retract
-  , wrap
+  ( MonadFree, wrap
   )
 
 import Control.Monad.Reader as X
   ( MonadReader, ask, local, reader
-  , Reader, runReader
-  , ReaderT, ReaderT(ReaderT), runReaderT
   )
 
 import Control.Monad.State as X
   ( MonadState, get, put, state
-  , State, runState
-  -- Note there also exists a strict interpretation but we default to the lazy
-  -- implementation.
-  , StateT, StateT(StateT), runStateT
-  )
-
-import Control.Monad.Writer as X
-  ( MonadWriter, listen, pass, tell, writer
-  , Writer, runWriter
-  -- Note there also exists a strict interpretation but we default to the lazy
-  -- implementation.
-  , WriterT, WriterT(WriterT), runWriterT
   )
 
 import Control.Monad.Trans as X
@@ -88,12 +70,37 @@ import Control.Monad.Trans as X
   , lift
   )
 
-import Control.Monad.Trans.Either as X
-  ( EitherT, EitherT(EitherT), runEitherT
+import Control.Monad.Writer as X
+  ( MonadWriter, listen, pass, tell, writer
   )
 
-import Control.Monad.Trans.Maybe as X
-  ( MaybeT, MaybeT(MaybeT), runMaybeT
+import Control.Monad.Trans.Except as X
+  ( Except -- ^ ExceptT e Identity :: * -> *
+  , ExceptT, ExceptT(ExceptT)
+  , runExceptT
+  )
+
+import Control.Monad.Trans.Free as X
+  ( Free -- ^ FreeT f Identity :: * -> *
+  , FreeF, FreeF(Pure), FreeF(Free)
+  , FreeT, FreeT(FreeT), runFreeT
+  )
+
+import Control.Monad.Trans.Reader as X
+  ( Reader -- ^ ReaderT r Identity :: * -> *
+  , ReaderT, ReaderT(ReaderT), runReaderT
+  )
+
+-- We default to the lazy implementation of State.
+import Control.Monad.Trans.State as X
+  ( State -- ^ StateT s Identity :: * -> *
+  , StateT, StateT(StateT), runStateT
+  )
+
+-- We default to the lazy implementation of Writer.
+import Control.Monad.Trans.Writer as X
+  ( Writer -- ^ WriterT w Identity :: * -> *
+  , WriterT, WriterT(WriterT), runWriterT
   )
 
 import Data.Bool as X
