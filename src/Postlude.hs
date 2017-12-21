@@ -272,8 +272,12 @@ import GHC.Show as X
 
 import System.Environment as X
   ( getArgs
+  , getEnv
   , getEnvironment
   , getProgName
+  , lookupEnv
+  , setEnv
+  , unsetEnv
   )
 
 import System.IO as X
