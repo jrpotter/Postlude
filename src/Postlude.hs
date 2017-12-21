@@ -259,6 +259,10 @@ import GHC.Num as X
   , Integer
   )
 
+import GHC.Read as X
+  ( Read, readList, readListPrec, readPrec, readsPrec
+  )
+
 import GHC.Real as X
   ( Fractional, (/), fromRational, recip
   , Integral, div, divMod, mod, quot, quotRem, rem, toInteger
@@ -295,4 +299,8 @@ import System.IO as X
   , stdin
   , stdout
   , withFile
+  )
+
+import Text.Read as X
+  ( read
   )
