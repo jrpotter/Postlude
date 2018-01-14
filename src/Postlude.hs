@@ -267,7 +267,7 @@ import GHC.Read as X
 import GHC.Real as X
   ( Fractional, (/), fromRational, recip
   , Integral, div, divMod, mod, quot, quotRem, rem, toInteger
-  , Ratio
+  , Ratio, (%), numerator, denominator
   , Rational
   )
 
