@@ -269,6 +269,7 @@ import GHC.Real as X
   , Integral, div, divMod, mod, quot, quotRem, rem, toInteger
   , Ratio, (%), denominator, numerator
   , Rational
+  , Real, toRational
   , RealFrac, ceiling, floor, properFraction, round, truncate
   )
 
