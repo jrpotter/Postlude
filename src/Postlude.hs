@@ -1,6 +1,4 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE RankNTypes #-}
-{-# LANGUAGE TypeInType #-}
 
 -- The following maps all imports into a single module alias for easy exporting.
 -- In all cases, we choose to explicitly list all exports (and avoid the use of
@@ -10,10 +8,7 @@
 -- It is generally expected one will add the -XNoImplicitPrelude pragma to the
 -- file Postlude is being used in, and to import Postlude without any
 -- qualification.
-module Postlude
-( module X
-, undefined
-) where
+module Postlude (module X) where
 
 import Control.Applicative as X
   ( Applicative, (*>), (<*), (<*>), pure
@@ -214,6 +209,7 @@ import GHC.Enum as X
 
 import GHC.Err as X
   ( error
+  , undefined
   )
 
 import GHC.Float as X
@@ -309,11 +305,3 @@ import System.IO as X
 import Text.Read as X
   ( read
   )
-
-import qualified GHC.Err as Err
-import qualified GHC.Stack.Types as Stack.Types
-import qualified GHC.Types as GHC.Types
-
-undefined :: forall (r :: GHC.Types.RuntimeRep). forall (a :: GHC.Types.TYPE r).
-             Stack.Types.HasCallStack => a
-undefined = Err.error "Postlude.undefined"
