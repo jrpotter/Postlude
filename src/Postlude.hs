@@ -111,7 +111,7 @@ import Data.Bool as X
   , otherwise
   )
 
-import Data.ByteString.Lazy as X
+import Data.ByteString as X
   ( ByteString
   )
 
@@ -188,7 +188,7 @@ import Data.String as X
   ( String
   )
 
-import Data.Text.Lazy as X
+import Data.Text as X
   ( Text
   )
 

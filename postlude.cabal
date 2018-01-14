@@ -1,27 +1,43 @@
-name:                postlude
-version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/postlude#readme
-license:             BSD3
-license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2017 Author name here
-category:            Web
-build-type:          Simple
-cabal-version:       >=1.10
-extra-source-files:  README.md
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: a0f8ab1c4a70737a18ce50a346d1cdc193d7ff1f4e1b2114f1ea82f8ca03d9b2
+
+name:           postlude
+version:        0.1.0.1
+description:    Please see the README on Github at <https://github.com/jrpotter/postlude#readme>
+homepage:       https://github.com/jrpotter/postlude#readme
+bug-reports:    https://github.com/jrpotter/postlude/issues
+author:         Joshua Potter
+maintainer:     jrpotter2112@gmail.com
+copyright:      2018 Joshua Potter
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/jrpotter/postlude
 
 library
-  exposed-modules:     Postlude
-  hs-source-dirs:      src
-  default-language:    Haskell2010
-  build-depends:       base >= 4.7 && < 5,
-                       bytestring == 0.10.8.1,
-                       exceptions == 0.8.3,
-                       free == 4.12.4,
-                       ghc-prim == 0.5.0.0,
-                       mtl == 2.2.1,
-                       text == 1.2.2.2,
-                       transformers == 0.5.5.0
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , bytestring >=0.9 && <=0.10.8.2
+    , exceptions >=0.8 && <=0.8.3
+    , free >=4.0 && <=4.12.4
+    , ghc-prim >=0.5.0.0 && <=0.5.1.1
+    , mtl >=2.0.0.0 && <=2.2.1
+    , text >=1.2.0.0 && <=1.2.2.2
+    , transformers >=0.5.2.0 && <=0.5.5.0
+  exposed-modules:
+      Postlude
+  other-modules:
+      Paths_postlude
+  default-language: Haskell2010
