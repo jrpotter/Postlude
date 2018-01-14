@@ -1,4 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE RankNTypes #-}
+{-# LANGUAGE TypeInType #-}
 
 -- The following maps all imports into a single module alias for easy exporting.
 -- In all cases, we choose to explicitly list all exports (and avoid the use of
@@ -304,3 +306,11 @@ import System.IO as X
 import Text.Read as X
   ( read
   )
+
+import qualified GHC.Err as Err
+import qualified GHC.Stack.Types as Stack.Types
+import qualified GHC.Types as GHC.Types
+
+undefined :: forall (r :: GHC.Types.RuntimeRep). forall (a :: GHC.Types.TYPE r).
+             Stack.Types.HasCallStack => a
+undefined = Err.error "Postlude.undefined"

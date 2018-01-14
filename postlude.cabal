@@ -21,6 +21,7 @@ library
                        bytestring == 0.10.8.1,
                        exceptions == 0.8.3,
                        free == 4.12.4,
+                       ghc-prim == 0.5.0.0,
                        mtl == 2.2.1,
                        text == 1.2.2.2,
                        transformers == 0.5.5.0
