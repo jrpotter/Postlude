@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 11b8c26f553bf674da8af0841f67c273e62a36110eb4ff1dde16718067ba7f1a
+-- hash: 13d659fe8ecd81d67fd78960f36f07fa73797ddb1b931a27bfc3fcda98d924fc
 
 name:           postlude
 version:        0.1.0.1
@@ -28,13 +28,13 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.10.1.0 && <5
-    , bytestring >=0.9 && <=0.11
-    , exceptions >=0.8 && <=0.9
-    , free >=4 && <=5
-    , mtl >=2 && <=2.2.1
-    , text >=1.2 && <=1.2.2.2
-    , transformers >=0.5.2 && <=0.5.5
+      base >=4.7 && <5
+    , bytestring
+    , exceptions >=0.6 && <0.9
+    , free >=4.12 && <5
+    , mtl >=2.2.1 && <2.3
+    , text
+    , transformers >=0.4 && <0.6
   exposed-modules:
       Postlude
   other-modules:

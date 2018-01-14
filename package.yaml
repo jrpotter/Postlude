@@ -20,13 +20,13 @@ description:         Please see the README on Github at
                      <https://github.com/jrpotter/postlude#readme>
 
 dependencies:
-  - base >= 4.7 && < 5
-  - bytestring >= 0.9 && <= 0.11
-  - exceptions >= 0.8 && <= 0.9
-  - free >= 4 && <= 5
-  - mtl >= 2 && <= 2.2.1
-  - text >= 1.2 && <= 1.2.2.2
-  - transformers >= 0.5.2 && <= 0.5.5
+  - base >=4.7 && <5
+  - bytestring
+  - exceptions >=0.6 && <0.9
+  - free >=4.12 && < 5
+  - mtl >=2.2.1 && <2.3
+  - text
+  - transformers >=0.4 && <0.6
 
 library:
   source-dirs: src
