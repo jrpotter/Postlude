@@ -10,7 +10,10 @@
 -- It is generally expected one will add the -XNoImplicitPrelude pragma to the
 -- file Postlude is being used in, and to import Postlude without any
 -- qualification.
-module Postlude (module X) where
+module Postlude
+( module X
+, undefined
+) where
 
 import Control.Applicative as X
   ( Applicative, (*>), (<*), (<*>), pure
