@@ -10,6 +10,10 @@
 -- qualification.
 module Postlude (module X) where
 
+import Prelude as X
+  ( fromIntegral
+  )
+
 import Control.Applicative as X
   ( Applicative, (*>), (<*), (<*>), pure
   , (<$>)
