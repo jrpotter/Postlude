@@ -11,7 +11,9 @@
 module Postlude (module X) where
 
 import Prelude as X
-  ( fromIntegral
+  ( (^)
+  , (^^)
+  , fromIntegral
   )
 
 import Control.Applicative as X
