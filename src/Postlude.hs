@@ -79,29 +79,29 @@ import Control.Monad.Writer as X
   )
 
 import Control.Monad.Trans.Except as X
-  ( Except -- ^ ExceptT e Identity :: * -> *
+  ( Except
   , ExceptT, ExceptT(ExceptT), runExceptT
   )
 
 import Control.Monad.Trans.Free as X
-  ( Free -- ^ FreeT f Identity :: * -> *
+  ( Free
   , FreeT, FreeT(FreeT), runFreeT
   )
 
 import Control.Monad.Trans.Reader as X
-  ( Reader -- ^ ReaderT r Identity :: * -> *
+  ( Reader
   , ReaderT, ReaderT(ReaderT), runReaderT
   )
 
 -- We default to the lazy implementation of State.
 import Control.Monad.Trans.State as X
-  ( State -- ^ StateT s Identity :: * -> *
+  ( State
   , StateT, StateT(StateT), runStateT
   )
 
 -- We default to the lazy implementation of Writer.
 import Control.Monad.Trans.Writer as X
-  ( Writer -- ^ WriterT w Identity :: * -> *
+  ( Writer
   , WriterT, WriterT(WriterT), runWriterT
   )
 
