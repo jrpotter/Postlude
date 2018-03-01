@@ -105,6 +105,32 @@ import Control.Monad.Trans.Writer as X
   , WriterT, WriterT(WriterT), runWriterT
   )
 
+import Data.Bits as X
+  ( Bits
+  ,  (.&.)
+  ,  (.|.)
+  ,  bit
+  ,  bitSize
+  ,  bitSizeMaybe
+  ,  clearBit
+  ,  complement
+  ,  complementBit
+  ,  isSigned
+  ,  popCount
+  ,  rotate
+  ,  rotateL
+  ,  rotateR
+  ,  setBit
+  ,  shift
+  ,  shiftL
+  ,  shiftR
+  ,  testBit
+  ,  unsafeShiftL
+  ,  unsafeShiftR
+  ,  xor
+  ,  zeroBits
+  )
+
 import Data.Bool as X
   ( Bool, Bool(False), Bool(True)
   , (&&)
@@ -196,6 +222,14 @@ import Data.Text as X
 
 import Data.Traversable as X
   ( Traversable, mapM, sequence, sequenceA, traverse
+  )
+
+import Data.Word as X
+  ( Word
+  , Word8
+  , Word16
+  , Word32
+  , Word64
   )
 
 import GHC.Enum as X
