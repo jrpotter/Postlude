@@ -1,5 +1,5 @@
 name:                postlude
-version:             0.1.0.4
+version:             0.1.0.5
 github:              "jrpotter/postlude"
 license:             BSD3
 author:              "Joshua Potter"
@@ -23,7 +23,7 @@ dependencies:
   - base >=4.7 && <5
   - bytestring >=0.10.8.1 && <0.11
   - exceptions >=0.6 && <0.9
-  - free >=4.12 && < 5
+  - free >=4.12 && <=5.0.1
   - mtl >=2.2.1 && <2.3
   - text >=1.2.2.2 && <1.3
   - transformers >=0.4 && <0.6
