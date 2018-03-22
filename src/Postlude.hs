@@ -59,10 +59,6 @@ import Control.Monad.Except as X
   ( MonadError, catchError, throwError
   )
 
-import Control.Monad.Free as X
-  ( MonadFree, wrap
-  )
-
 import Control.Monad.Reader as X
   ( MonadReader, ask, local, reader
   )
@@ -87,7 +83,9 @@ import Control.Monad.Trans.Except as X
 
 import Control.Monad.Trans.Free as X
   ( Free
+  , FreeF, FreeF(Free), FreeF(Pure)
   , FreeT, FreeT(FreeT), runFreeT
+  , MonadFree, wrap
   )
 
 import Control.Monad.Trans.Reader as X
