@@ -216,7 +216,7 @@ import Data.String as X
   ( String
   )
 
-import Data.Text as X
+import Data.Text.Lazy as X
   ( Text
   )
 
