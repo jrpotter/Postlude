@@ -336,6 +336,7 @@ import System.IO as X
   ,   IOMode(WriteMode)
   , openFile
   , print
+  , readFile
   , stderr
   , stdin
   , stdout
