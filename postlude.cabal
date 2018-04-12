@@ -2,10 +2,10 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e6be0a4dec61b87fd1c331665965c41d6bae77fdbb44694de33350e772616127
+-- hash: 82b7ad1c15304e5bdef2dfe14b8cecc2e801967a3e05a65154970648658b171c
 
 name:           postlude
-version:        0.1.0.7
+version:        0.1.0.8
 description:    Please see the README on Github at <https://github.com/jrpotter/postlude#readme>
 homepage:       https://github.com/jrpotter/postlude#readme
 bug-reports:    https://github.com/jrpotter/postlude/issues

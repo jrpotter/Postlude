@@ -69,7 +69,7 @@ import Control.Monad.State as X
 
 import Control.Monad.Trans as X
   ( MonadIO, liftIO
-  , lift
+  , MonadTrans, lift
   )
 
 import Control.Monad.Writer as X
