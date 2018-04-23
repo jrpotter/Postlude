@@ -93,18 +93,6 @@ import Control.Monad.Trans.Reader as X
   , ReaderT, ReaderT(ReaderT), runReaderT
   )
 
--- We default to the lazy implementation of State.
-import Control.Monad.Trans.State as X
-  ( State
-  , StateT, StateT(StateT), runStateT
-  )
-
--- We default to the lazy implementation of Writer.
-import Control.Monad.Trans.Writer as X
-  ( Writer
-  , WriterT, WriterT(WriterT), runWriterT
-  )
-
 import Data.Bits as X
   ( Bits
   ,  (.&.)
@@ -137,10 +125,6 @@ import Data.Bool as X
   , (||)
   , not
   , otherwise
-  )
-
-import Data.ByteString.Lazy as X
-  ( ByteString
   )
 
 import Data.Char as X
@@ -214,10 +198,6 @@ import Data.Ord as X
 
 import Data.String as X
   ( String
-  )
-
-import Data.Text.Lazy as X
-  ( Text
   )
 
 import Data.Traversable as X
