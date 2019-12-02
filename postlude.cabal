@@ -1,11 +1,13 @@
--- This file has been generated from package.yaml by hpack version 0.21.2.
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a9b86e4681094ba732bd53deeeed47aad77606ad9fce8265f9917349d9aaa833
+-- hash: 279baf8a9c78e19c42e376ae268fa1e0869c2f0f3a7cf2c091f4d286fcaadcb6
 
 name:           postlude
-version:        0.1.0.9
+version:        0.1.1.0
 description:    Please see the README on Github at <https://github.com/jrpotter/postlude#readme>
 homepage:       https://github.com/jrpotter/postlude#readme
 bug-reports:    https://github.com/jrpotter/postlude/issues
@@ -15,8 +17,6 @@ copyright:      2018 Joshua Potter
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
-cabal-version:  >= 1.10
-
 extra-source-files:
     README.md
 

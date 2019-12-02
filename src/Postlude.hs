@@ -8,7 +8,9 @@
 -- It is generally expected one will add the -XNoImplicitPrelude pragma to the
 -- file Postlude is being used in, and to import Postlude without any
 -- qualification.
-module Postlude (module X) where
+module Postlude
+( module X
+) where
 
 import Prelude as X
   ( (^)
@@ -17,8 +19,15 @@ import Prelude as X
   )
 
 import Control.Applicative as X
-  ( Applicative, (*>), (<*), (<*>), pure
+  ( Alternative, (<|>), empty, many, some
+  , Applicative, (*>), (<*), (<*>), liftA2, pure
+  , Const, getConst
+  , (<$)
   , (<$>)
+  , (<**>)
+  , liftA
+  , liftA3
+  , optional
   )
 
 import Control.Arrow as X
@@ -36,7 +45,26 @@ import Control.Arrow as X
 import Control.Monad as X
   ( Monad, (>>=), (>>), return, fail
   , MonadPlus, mplus, mzero
+  , (<=<)
+  , (=<<)
+  , (>=>)
+  , ap
+  , forM
+  , forM_
+  , forever
   , guard
+  , liftM
+  , liftM2
+  , liftM3
+  , liftM4
+  , liftM5
+  , mapM
+  , mapM_
+  , sequence
+  , sequence_
+  , unless
+  , void
+  , when
   )
 
 import Control.Monad.Catch as X
@@ -191,6 +219,14 @@ import Data.Monoid as X
   ( Monoid, mappend, mconcat, mempty
   )
 
+import Data.Ratio as X
+  ( Ratio, (%), denominator, numerator
+  )
+
+import Data.Semigroup as X
+  ( Semigroup, (<>), sconcat, stimes
+  )
+
 import Data.Ord as X
   ( Ord, (<), (<=), (>), (>=), compare, max, min
   , Ordering, Ordering(EQ), Ordering(GT), Ordering(LT)
@@ -212,7 +248,14 @@ import Data.Word as X
   , Word64
   )
 
-import GHC.Enum as X
+import Numeric as X
+  ( expm1
+  , log1mexp
+  , log1p
+  , log1pexp
+  )
+
+import Prelude as X  -- GHC.Enum
   ( Bounded, maxBound, minBound
   , Enum
   ,   enumFrom
@@ -225,12 +268,12 @@ import GHC.Enum as X
   ,   toEnum
   )
 
-import GHC.Err as X
+import Prelude as X  -- GHC.Err
   ( error
   , undefined
   )
 
-import GHC.Float as X
+import Prelude as X  -- GHC.Float
   ( Double
   , Float
   , Floating
@@ -244,11 +287,7 @@ import GHC.Float as X
   ,   cos
   ,   cosh
   ,   exp
-  ,   expm1
   ,   log
-  ,   log1mexp
-  ,   log1p
-  ,   log1pexp
   ,   logBase
   ,   pi
   ,   sin
@@ -273,26 +312,17 @@ import GHC.Float as X
   ,   significand
   )
 
-import GHC.Num as X
+import Prelude as X  -- GHC.Num
   ( Num, (*), (+), (-), abs, fromInteger, negate, signum
   , Integer
   )
 
-import GHC.Read as X
-  ( Read, readList, readListPrec, readPrec, readsPrec
-  )
-
-import GHC.Real as X
+import Prelude as X  -- GHC.Real
   ( Fractional, (/), fromRational, recip
   , Integral, div, divMod, mod, quot, quotRem, rem, toInteger
-  , Ratio, (%), denominator, numerator
   , Rational
   , Real, toRational
   , RealFrac, ceiling, floor, properFraction, round, truncate
-  )
-
-import GHC.Show as X
-  ( Show, show, showList, showsPrec
   )
 
 import System.Environment as X
@@ -324,5 +354,10 @@ import System.IO as X
   )
 
 import Text.Read as X
-  ( read
+  ( Read, readList, readListPrec, readPrec, readsPrec
+  , read
+  )
+
+import Text.Show as X
+  ( Show, show, showList, showsPrec
   )
