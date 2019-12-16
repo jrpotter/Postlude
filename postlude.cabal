@@ -4,10 +4,10 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: dfac36d217ad061f0c553491a9c1b6f14008ae9d0955634102e91bd883e19642
+-- hash: b15a77bdf953912b1520c6333f6c8d6d40485916fa2ba48e8c76fe6715d40ea5
 
 name:           postlude
-version:        0.1.1.0
+version:        0.1.2.0
 description:    Please see the README on Github at <https://github.com/jrpotter/postlude#readme>
 homepage:       https://github.com/jrpotter/postlude#readme
 bug-reports:    https://github.com/jrpotter/postlude/issues
