@@ -5,13 +5,15 @@ module Postlude.Strict
 ) where
 
 import Control.Monad.Trans.State.Strict as S
-  ( State
+  ( State, runState
   , StateT, StateT(StateT), runStateT
+  , get, put, state
   )
 
 import Control.Monad.Trans.Writer.Strict as S
-  ( Writer
+  ( Writer, runWriter
   , WriterT, WriterT(WriterT), runWriterT
+  , listen, pass, tell, writer
   )
 
 import Data.ByteString as S

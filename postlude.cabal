@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 279baf8a9c78e19c42e376ae268fa1e0869c2f0f3a7cf2c091f4d286fcaadcb6
+-- hash: dfac36d217ad061f0c553491a9c1b6f14008ae9d0955634102e91bd883e19642
 
 name:           postlude
 version:        0.1.1.0
@@ -36,9 +36,8 @@ library
   build-depends:
       base >=4.7 && <5
     , bytestring >=0.10.8.1 && <0.11
-    , exceptions >=0.6 && <0.9
-    , free >=4.12 && <=5.0.1
-    , mtl >=2.2.1 && <2.3
+    , exceptions >=0.6 && <0.11
+    , free >=5.0.1 && <6
     , text >=1.2.2.2 && <1.3
     , transformers >=0.4 && <0.6
   default-language: Haskell2010

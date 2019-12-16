@@ -83,30 +83,18 @@ import Control.Monad.Catch as X
   , try
   )
 
-import Control.Monad.Except as X
-  ( MonadError, catchError, throwError
-  )
-
-import Control.Monad.Reader as X
-  ( MonadReader, ask, local, reader
-  )
-
-import Control.Monad.State as X
-  ( MonadState, get, put, state
-  )
-
-import Control.Monad.Trans as X
+import Control.Monad.IO.Class as X
   ( MonadIO, liftIO
-  , MonadTrans, lift
   )
 
-import Control.Monad.Writer as X
-  ( MonadWriter, listen, pass, tell, writer
+import Control.Monad.Trans.Class as X
+  ( MonadTrans, lift
   )
 
 import Control.Monad.Trans.Except as X
   ( Except
   , ExceptT, ExceptT(ExceptT), runExceptT
+  , catchE, throwE
   )
 
 import Control.Monad.Trans.Free as X
@@ -119,6 +107,7 @@ import Control.Monad.Trans.Free as X
 import Control.Monad.Trans.Reader as X
   ( Reader
   , ReaderT, ReaderT(ReaderT), runReaderT
+  , ask, local, reader
   )
 
 import Data.Bits as X
