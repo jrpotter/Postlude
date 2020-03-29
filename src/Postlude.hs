@@ -83,6 +83,11 @@ import Control.Monad.Catch as X
   , try
   )
 
+import Control.Monad.Fix as X
+  ( MonadFix, MonadFix(mfix)
+  , fix
+  )
+
 import Control.Monad.IO.Class as X
   ( MonadIO, liftIO
   )
